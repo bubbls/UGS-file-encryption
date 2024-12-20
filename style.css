@@ -1,0 +1,182 @@
+/* General Body and HTML Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-size: cover;
+}
+
+/* WebGL Content Styling */
+.webgl-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+    padding: 0;
+}
+
+/* Canvas Styling */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Game Container */
+#gameContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Error and Loading Blocks */
+#errorBrowserBlock,
+#loadingBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Logo and Buttons */
+#fullScreenButton, #logoname {
+    position: absolute;
+    bottom: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#fullScreenButton {
+    right: 5px;
+    background-image: url(../img/fullScreen_on.png);
+    background-size: 35px 35px;
+}
+
+#logoname {
+    left: 15px;
+    bottom: 11px;
+    width: 141px;
+    height: 20px;
+    background-image: url(../img/logo-big.png);
+    background-size: 141px 20px;
+}
+
+/* Subtitle and Logo */
+.subtitle {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 265px;
+    height: 60px;
+}
+
+.logo-game {
+    height: 150px;
+    width: auto;
+    margin: 5px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress Bar Styling */
+.progress {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 18px;
+    width: 141px;
+    margin-top: 90px;
+}
+
+.progress .empty {
+    background: url(TemplateData/progressEmpty.Light.png) no-repeat right/cover;
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.progress .full {
+    background: url(TemplateData/progressFull.Light.png) no-repeat left/cover;
+    float: left;
+    width: 0%;
+    height: 100%;
+}
+
+/* Footer Section */
+.webgl-content .footer {
+    margin-top: 5px;
+    height: 38px;
+    line-height: 38px;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.webgl-content .footer .webgl-logo {
+    background-image: url(TemplateData/webgl-logo.png);
+    width: 204px;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background: transparent center no-repeat;
+}
+
+.webgl-content .footer .fullscreen {
+    background-image: url(TemplateData/fullscreen.png);
+    width: 38px;
+    height: 100%;
+    float: right;
+}
+
+/* Links Styling */
+#links2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    list-style: none;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+}
+
+#links2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#links2 ul li {
+    display: inline;
+}
+
+#links2 ul li a {
+    color: #000;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#links2 ul li a:hover {
+    opacity: 0.85;
+}
